@@ -15,8 +15,11 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run a one-line script
         run: bash $GITHUB_WORKSPACE/script.sh
-      - uses: actions/upload-artifact@v2
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          path: |
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          title: "google ip data"
+          files: |
             data/*
             output/dat/*
