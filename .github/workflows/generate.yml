@@ -1,0 +1,22 @@
+# This is a basic workflow to help you get started with Actions
+
+name: generate-dat-file
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    container: golang:latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run a one-line script
+        run: bash $GITHUB_WORKSPACE/script.sh
+      - uses: actions/upload-artifact@v2
+        with:
+          path: |
+            $GITHUB_WORKSPACE/data/*
+            $GITHUB_WORKSPACE/output/dat/*
