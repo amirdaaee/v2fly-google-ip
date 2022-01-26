@@ -1,0 +1,30 @@
+{
+    "input": [
+      {
+        "type": "text",
+        "action": "add",
+        "args": {
+          "name": "ipv4.txt",
+          "uri":"./data/ipv4.txt"
+
+        }
+      },
+      {
+        "type": "text",
+        "action": "add",
+        "args": {
+          "name": "ipv6.txt",
+          "uri":"./data/ipv4.txt"
+        }
+      }
+    ],
+    "output": [
+      {
+        "type": "v2rayGeoIPDat",
+        "action": "output",
+        "args": {
+          "outputName": "google.dat"
+        }
+      }
+    ]
+  }
