@@ -12,8 +12,8 @@
         "type": "text",
         "action": "add",
         "args": {
-          "name": "google_ipv4",
-          "uri":"./data/ipv4.txt"
+          "name": "google_ipv6",
+          "uri":"./data/ipv6.txt"
         }
       }
     ],
