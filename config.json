@@ -4,16 +4,15 @@
         "type": "text",
         "action": "add",
         "args": {
-          "name": "ipv4.txt",
+          "name": "google_ipv4",
           "uri":"./data/ipv4.txt"
-
         }
       },
       {
         "type": "text",
         "action": "add",
         "args": {
-          "name": "ipv6.txt",
+          "name": "google_ipv4",
           "uri":"./data/ipv4.txt"
         }
       }
