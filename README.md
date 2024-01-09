@@ -1,6 +1,6 @@
 # v2fly-google-ip
 
-This repository contains a script to generate a v2ray IP ".ext" file, including all Google IPs from the "https://www.gstatic.com/ipranges/goog.json" source.
+This repository contains a script to generate a v2ray IP ".dat" file, including all Google IPs from the "https://www.gstatic.com/ipranges/goog.json" source.
 
 ## Usage
 
