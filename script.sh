@@ -6,4 +6,4 @@ wget -O $JSON_FILE https://www.gstatic.com/ipranges/goog.json
 python3 json_parser.py
 export ASSUME_NO_MOVING_GC_UNSAFE_RISK_IT_WITH=go1.21
 go install -v github.com/v2fly/geoip@43aa8a7f3e2ca86f5a3dc4408a5523a5fe8abb1d
-$HOME/go/bin/geoip
+${GOBIN:-$HOME/go/bin}/geoip
